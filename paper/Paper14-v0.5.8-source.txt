@@ -1,0 +1,1148 @@
+Spacetime as Escrow Bookkeeping:
+A Conceptual Translation of General Relativity
+into the Static Entropy Escrow Vocabulary
+Grant L. Whitmer III
+Windstorm Institute, Fort Ann, New York 12827, USA
+ORCID: 0009-0007-3224-755X
+grant@windstorminstitute.org
+(Dated: May 2026; Draft v0.5.8)
+
+ABSTRACT
+We translate four standard results of general relativity — gravitational time dilation, the Tolman temperature
+law, the Bekenstein–Hawking entropy formula, and Jacobson's (1995) thermodynamic derivation of the Einstein
+field equations — into the vocabulary of the static gravitational entropy escrow framework [1]. We show that the
+standard expressions for these results admit a single re-reading: the entropy S_esc held in escrow against the local
+Unruh temperature by gravitationally bound mass-energy is the same object whose flow appears in Jacobson's first
+law, whose magnitude equals the Bekenstein–Hawking entropy for a Schwarzschild horizon exactly, and whose
+product with the local Unruh temperature governs the gravitational redshift via the Tolman relation. The timedilation leg of this translation is restricted to the weak-field regime; the exact Schwarzschild factor is recovered
+through the Tolman relation as an exact statement of GR, not through extension of the escrow translation itself.
+None of the underlying physics is modified by this translation. The framework's contribution at the level treated in
+this paper is interpretive: it provides a thermodynamic re-reading of these four results, identifying a single
+thermodynamic ratio — S_esc = |U_grav|/T_U — through which they can be expressed as faces of one identity. We
+are explicit that this 'single object' is partly notational: |U_grav| takes regime-specific forms across the four
+translation legs that have not yet been connected by a single covariant construction, and T_U is used with two
+related but distinct conventions connected by the Tolman shift (§V.G, §V.H). The unification at the level of the
+algebraic form S = |U|/T is real; the unification at the level of a single covariant observable is partial and remains an
+open theoretical task. We explicitly do not derive Einstein's equations, the BW asymptote of the modular
+Hamiltonian, or any new equation of motion. The lattice tests of [2] establish that the modular-Hamiltonian leg of
+this translation holds partially in 1+1D (approximate recovery of the Bisognano–Wichmann linear asymptote at
+small distances from the cut, with a 1/30 prefactor suppression whose origin is open), and shows a qualitatively
+different functional form in 3+1D within the lattice sizes presently accessible (peaked-then-decaying rather than
+monotonically linear). We discuss what this dimensional dependence means for the translation, and identify the
+prefactor's origin and the 3+1D rate-of-approach question as the principal open theoretical problems. This is a
+translation paper, not a derivation paper: its contribution is conceptual re-reading rather than new equations or new
+predictions. The single calculation that would promote it from interpretive synthesis to constraining theoretical
+proposal is a first-principles derivation of the 1/30 prefactor from lattice-regulated free QFT; until that calculation
+succeeds, the framework's identification of the escrow entropy with the modular-Hamiltonian content of a localized
+perturbation remains a candidate proposal rather than a confirmed identity.
+
+I. INTRODUCTION
+A. What this paper is
+The static gravitational entropy escrow framework [1] proposes that gravitational binding energy is entropy held
+"in escrow" against the local Unruh temperature: for any gravitationally bound configuration with binding energy |
+U_grav| at a location where the local Unruh temperature is T_U, the escrow entropy is S_esc = |U_grav|/T_U. The
+framework paper develops the consequences of this single relation, including the recovery of Newton's law via an
+entropic-force argument and a reproduction of the Bekenstein–Hawking entropy formula at horizons. Companion
+work [2] tests the modular-Hamiltonian interpretation of the postulate against free scalar field theory on regulated
+lattices in 1+1 and 3+1 dimensions; that work reports approximate recovery of the Bisognano–Wichmann linear
+
+asymptote in 1+1D at small distances from the cut, with a prefactor suppression of approximately 1/30 of the literal
+BW value, and non-recovery in 3+1D within the d1 range the present lattice can resolve.
+What the framework paper does not do, and what the lattice paper does not do, is connect the escrow postulate
+to the established literature on the thermodynamic derivation of Einstein's equations — specifically to Jacobson's
+(1995) derivation [3] from δQ = T·dS at local Rindler horizons, to the Tolman–Ehrenfest relation [4] for thermal
+equilibrium in static gravitational potentials, and to the Faulkner–Guica–Hartman–Myers–Van Raamsdonk
+(FGHMV) result [5,6] that demanding the entanglement-entropy first law for vacuum-state perturbations gives
+linearized Einstein equations in asymptotically AdS spacetimes. These three results, plus the Bekenstein–Hawking
+formula [7,8], constitute a now-substantial body of work establishing that general relativity has the standing of a
+thermodynamic equation of state. The static escrow postulate, as stated, lives squarely inside this body of work. The
+connection has not previously been made explicit.
+The present paper makes the connection explicit. We translate each of these four standard results into the
+escrow vocabulary, show that the translation in each case is mathematically empty (no equation of standard GR is
+modified or supplemented), and demonstrate that the escrow postulate provides a single interpretive object — S_esc
+— that lets the four results be read as four faces of one identity. We are explicit (as developed in §V.G–H) that this
+'single object' description is partly notational: the |U_grav| feeding into S_esc takes regime-specific forms across the
+four translation legs, and T_U is used with two related but distinct conventions; the unification is real at the level of
+the algebraic form S = |U|/T, and partial at the level of identifying a single covariant observable. The contribution is
+a conceptual re-reading, not new physics. We are explicit throughout that 'escrow' is interpretive vocabulary, not a
+claim about a literal account-keeping mechanism in the vacuum. S_esc = |U_grav|/T_U is a defined ratio; the
+bookkeeping language (held in escrow, released, flow) is suggestive shorthand for the thermodynamic structure of
+that ratio, not a claim about ontologically separate accounts or ledgers. The framework's scientific content is the
+dimensional and structural relation S_esc = |U_grav|/T_U and its consequences, not the linguistic frame in which we
+describe it.
+
+B. Why a translation paper is worth writing
+Three observations motivate the present paper. First, the escrow framework's published presentation [1] does
+not state its relationship to Jacobson's derivation explicitly, with the consequence that readers familiar with [3] have
+no easy path to placing the escrow postulate within the existing thermodynamic-gravity literature. The framework is
+at risk of being read as a parallel proposal competing with [3] when it is, more accurately, a specification of what the
+S in Jacobson's δQ = T·dS is the entropy of. The present paper makes this specification explicit and addresses the
+parallel-proposal misreading.
+Second, the lattice paper [2] tests the modular-Hamiltonian leg of this connection numerically and finds partial
+recovery in 1+1D and non-recovery in 3+1D. Without an explicit statement of what is being tested, readers of [2]
+may be unclear which interpretation of the escrow postulate the lattice results actually constrain. The present paper
+supplies the explicit interpretation that [2]'s tests target.
+Third, the framework's history includes one documented failed extension — the C8 entropy-current attempt
+described in [9] — in which an attempt to make the postulate dynamically active reduced to a rate-equation
+reformulation of the saturated Bekenstein bound. The failure mode there was an overreach beyond what the
+framework's interpretive content actually supports. The present paper consolidates what the framework can and
+cannot claim at the interpretive level, with explicit guardrails (§V) against the failure modes documented in [9] and
+in the present authors' subsequent reviewer-feedback iterations on [2]. These guardrails are the principal pedagogical
+contribution of the paper, and they include (i) explicit rejection of a separate "escrow stress-energy tensor" added to
+the matter source of Einstein's equation, (ii) explicit rejection of any "vacuum computational bandwidth" reading of
+the framework, and (iii) explicit observer-dependence of the escrow entropy (different observers, different escrows).
+
+C. Scope and reading order
+Sections II, III, and IV present the three legs of the translation: time dilation as Tolman temperature shift (§II),
+the Jacobson derivation as an escrow-flow identity (§III), and the modular-Hamiltonian connection to vacuum
+entanglement structure (§IV). Each section follows a common template: (A) standard statement of a known GR
+result, (B) translation into escrow vocabulary, (C) why the two readings reduce to the same identity, (D) explicit
+scope (what the section does and does not establish), (E) explicit guardrails against the local failure modes specific
+to that section. Section V consolidates the guardrails from §II.E, §III.F, and §IV.E into a single statement of what
+the framework does not commit to, with subsections G and H explicitly naming the framework's unresolved scope-
+
+limitations (§V.G: |U_grav| lacks a single covariant definition across regimes; §V.H: T_U is used with two related
+but distinct conventions related by the Tolman shift). Section VI states the conclusion and identifies the principal
+open theoretical problems.
+Three contributions of this paper are worth flagging at the outset. First, equation (8) of §II isolates the
+dimensionless geometric quantity 2πr/λ_C — the ratio of a circumference to the test particle's reduced Compton
+wavelength — as the dimensionless content of the escrow entropy for a single test mass; we introduce the working
+notation 𝒩_esc ≡ 2πr/λ_C for this quantity in §II.B and identify it as the candidate organizing variable for the testmass leg of the translation. This ratio is the unique dimensionless invariant constructible from the Newtonian-limit
+ingredients (binding energy GMm/r divided by an acceleration-based Unruh temperature), so its appearance in
+equation (8) is dimensionally forced rather than a discovery; what is non-trivial is that the same dimensionless
+quantity recurs in independently-derived corners of semiclassical gravity (saturation of the Bekenstein bound for a
+test mass of energy mc² confined to radius r, Euclidean horizon periodicity, modular flow generators), and the
+recurrence is the smallest piece of evidence the framework is tracking a real organizing variable rather than
+performing a sophisticated change of variables. Second, equations (17)–(18) of §III show that the escrow postulate's
+prediction for the entropy of a Schwarzschild black hole equals the Bekenstein–Hawking entropy to all displayed
+digits, with no fudge factor; we describe this as a structural-consistency check rather than an independent prediction
+(the equality follows algebraically from the choice |U_grav|^Schw = Mc²/2 and the standard Hawking temperature
+formula), and we extend the consistency check in §III.D to Reissner–Nordström and Kerr horizons via the Smarr
+formula. Third, §IV's connection to the FGHMV result places the lattice paper's empirical content [2] inside the
+FGHMV theoretical framework: the 1/30 prefactor and the 3+1D non-recovery become specific calculational
+questions about how lattice-regulated free QFT approaches its continuum BW limit, rather than free-floating
+empirical curiosities.
+The framework's broader empirical anchors live in [1] and depend on the static escrow postulate's horizonthermodynamic content, which is unchanged by the conceptual reframing the present paper provides. We do not
+revisit those anchors here; the present paper concerns the GR-to-escrow translation.
+
+II. TIME DILATION AS TOLMAN TEMPERATURE SHIFT
+A. The standard statement
+A clock at radius r outside a non-rotating mass M runs slow relative to a clock at infinity by the Schwarzschild
+redshift factor
+dτ/dt = √(1 − 2GM/rc²)
+
+(1)
+
+where τ is proper time at r and t is coordinate time (the proper time of an observer at infinity). In the weak-field
+limit GM/rc² ≪ 1,
+dτ/dt ≈ 1 − GM/(rc²)
+
+(2)
+
+This is the standard expression for gravitational time dilation.
+A separate but related fact about static gravitational potentials is the Tolman relation [4]. A thermal bath in
+equilibrium across a static spacetime does not have a uniform local temperature; the local temperature T_local(r)
+measured by a stationary observer at radius r is related to the temperature measured at infinity T_∞ by
+T_local(r) · √(−g_tt(r)) = T_∞ = constant
+
+(3)
+
+For the Schwarzschild metric this is
+T_local(r) · √(1 − 2GM/rc²) = T_∞
+
+(4)
+
+Comparing equations (1) and (4) shows that the local temperature is boosted relative to the temperature at
+infinity by exactly the same factor by which the local clock runs slow:
+T_local(r)/T_∞ = dt/dτ = 1/√(1 − 2GM/rc²)
+
+(5)
+
+This is a known result. It says that gravitational time dilation and the Tolman temperature shift are the same
+equation, expressed in two different vocabularies. What the standard derivation does not provide is an interpretation
+of why these two should be the same equation. The escrow framework provides one.
+
+B. The escrow translation
+The static escrow postulate [1] asserts that for any gravitationally bound configuration with binding energy |
+U_grav| at a location where the local Unruh temperature is T_U, the entropy held in escrow against that temperature
+is
+S_esc = |U_grav| / T_U
+
+(6)
+
+For a test mass m at radius r outside mass M, the binding energy is |U_grav| = GMm/r in the Newtonian limit,
+and the proper acceleration required to hold the test mass static is a = GM/r². The Unruh temperature at this
+acceleration is
+T_U = ℏa/(2πck_B) = ℏGM/(2πck_B r²)
+
+(7)
+
+Substituting (7) into (6):
+S_esc = (GMm/r)/(ℏGM/(2πck_B r²)) = 2πck_B r m / ℏ
+
+(8)
+
+This is a real geometric quantity: S_esc/k_B = 2πr/λ_C where λ_C = ℏ/(mc) is the reduced Compton
+wavelength of the test mass — that is, the number of Compton wavelengths that fit into the circumference 2πr. The
+dimensionless escrow counts how many Compton circumferences of the test mass fit around a circle of radius r. This
+is the quantity the escrow postulate identifies as the entropy held in reserve by the gravitational binding.
+The same dimensionless quantity has a separate physical meaning that is worth stating explicitly. The
+Bekenstein bound states that the entropy of any system of total energy E confined within a sphere of radius R is
+bounded above by
+S ≤ 2πER/(ℏc)
+For a system of energy E = mc² and confinement radius R = r, the bound takes the value
+2π(mc²)r/(ℏc) = 2πmcr/ℏ = 2πr/λ_C
+
+(in units of k_B)
+
+— numerically identical to the escrow entropy of a test mass of rest mass m at orbital radius r given by equation
+(8). We are explicit that this is in the first instance a dimensional coincidence: the Bekenstein bound is a statement
+about a confined system, and the escrow translation considers an orbital configuration; reading the equality as 'the
+escrow entropy saturates the Bekenstein bound' requires identifying orbital radius with confinement radius, which is
+an interpretive step rather than a settled physical equivalence. With that interpretive identification made, the equality
+has a suggestive reading: gravitational binding holds the test particle's entropy budget at the same value that the
+Bekenstein bound would assign to a system of its rest energy and orbital scale. The framework treats this reading as
+a physical motivation, independent of the postulate's dimensional construction, for considering S_esc rather than
+some other dimensional combination as the relevant entropy; the dimensional coincidence itself is real, and its
+interpretive content is what the framework proposes.
+Because this dimensionless ratio is the candidate organizing variable for the test-mass leg of the translation, we
+introduce a symbol for it. Let
+𝒩_esc ≡ 2πr/λ_C = 2πmcr/ℏ
+
+(8')
+
+denote the dimensionless escrow count of a test mass m at radius r. 𝒩_esc is the number of reduced Compton
+wavelengths of the test mass that fit into the circumference of a circle of radius r, and equivalently — by the
+saturation observation above — the Bekenstein-bound entropy of the test mass at that radius in units of k_B. Within
+the framework, 𝒩_esc serves as the candidate organizing variable for the test-mass thermodynamic-gravity
+dictionary: every other quantity in §II is expressed in terms of 𝒩_esc and one local kinematic factor (T_U or m c²).
+The naming is provisional; the dimensionless ratio it labels has appeared implicitly in semiclassical-gravity
+calculations for decades (e.g., in Bekenstein-bound saturation arguments, Euclidean horizon periodicity, and
+modular flow generators), but its identification as the escrow count of a gravitationally bound test mass is, to our
+knowledge, first stated in the framework paper [1] and made explicit here. If the framework is eventually adopted,
+the dimensionless escrow count is the most natural quantity to receive a permanent name; we have used ' 𝒩_esc' as a
+working notation rather than attaching a personal label, in deference to the community's prerogative to settle such
+naming through citation rather than authorial declaration.
+We can now rewrite the Newtonian-limit time dilation (equation 2) in escrow language. Multiplying numerator
+and denominator on the right side of (2) by T_U and recognizing |U_grav|/T_U = S_esc:
+
+dτ/dt ≈ 1 − GM/(rc²) = 1 − |U_grav|/(mc²) = 1 − S_esc T_U/(mc²)
+
+(9)
+
+This is the translation. The fractional slowdown of a clock at radius r is the product of the local escrow entropy
+and the local Unruh temperature, divided by the rest energy of the clock.
+Equation (9) is not a new equation. It is equation (2) — the Newtonian limit of the Schwarzschild redshift —
+with the binding energy |U_grav| replaced by its escrow decomposition S_esc · T_U. Its only content beyond
+equation (2) is interpretive: it identifies why the clock slows down at exactly the rate it does. The clock slows
+because a clock is an apparatus for converting energy into distinguishable states at a rate set by its rest mass, and the
+energy available for state-distinction at radius r is reduced by the amount |U_grav| that is held in escrow against the
+local Unruh temperature.
+Numerical verification: at the Earth's equatorial surface (M = 5.972 × 10²⁴ kg, r = 6.378 × 10⁶ m using WGS84),
+the right side of equation (9) evaluates to a fractional clock slowdown of 6.953 × 10⁻¹⁰, which matches the
+published Schwarzschild redshift exactly. The corresponding accumulated clock difference is approximately 22
+milliseconds per year, consistent with measured values.
+
+C. Why the Tolman shift and the clock slowdown are the same equation
+The Tolman relation (equation 4) and the redshift relation (equation 1) are the same equation because of a basic
+thermodynamic identity. A thermal bath in equilibrium across a static spacetime is, by definition, a configuration in
+which energy flows freely between regions without net change. For this to be consistent with gravitational redshift
+— which causes photons emitted in a region of low gravitational potential to lose energy as they climb out — the
+local temperature must increase to compensate. Tolman (1930) derived equation (3) from this requirement.
+Equivalently, the Tolman relation is the statement that a thermal photon's energy redshifts according to (1) and a
+thermal photon's temperature is its characteristic energy.
+In the escrow vocabulary the identity is immediate. The local Unruh temperature T_U(r) is fixed by the proper
+acceleration a(r) = GM/r². The escrow held against that temperature is |U_grav|/T_U. The fractional clock slowdown
+is |U_grav|/(mc²). Eliminating |U_grav| between these two relations immediately yields
+dτ/dt = 1 − S_esc · T_U / (mc²) = 1 − T_U · S_esc / E_rest
+
+(10)
+
+so the clock slowdown is set by the ratio of (local Unruh temperature times local escrow) to the clock's rest
+energy. The Tolman relation, in turn, is the statement that T_local scales as the inverse of the clock slowdown
+factor. Both statements reduce to the same algebraic identity: the local Unruh temperature, the local clock rate, and
+the local escrow are three faces of one quantity, namely the local proper acceleration a(r).
+In standard GR this identity is established through the metric: √(−g_tt) appears in the redshift, in the Tolman
+factor, and in the Unruh temperature through its relationship to surface gravity. The escrow framework makes the
+same identity transparent by routing all three through S_esc and T_U explicitly, without requiring the metric as an
+intermediate object.
+
+D. What this section does and does not establish
+This section does not derive equation (1) from the escrow postulate. Equation (1) is a standard result of general
+relativity and has many derivations independent of any thermodynamic interpretation. What this section establishes
+is a dictionary: the standard expression for gravitational time dilation can be rewritten in escrow language as
+equation (10), and the rewriting makes manifest the relationship between time dilation and the Tolman temperature
+shift that is otherwise an apparent coincidence requiring separate derivation. We note explicitly that the escrow
+translation in equation (9) operates at the level of the weak-field expansion (1 − GM/rc²), not the exact
+Schwarzschild factor √(1 − 2GM/rc²). It is important to distinguish two separate statements: the Tolman–Ehrenfest
+relation T_local · √(−g_tt) = T_∞, equation (3), is exact for any static spacetime (it follows from the existence of a
+timelike Killing vector and from Tolman–Ehrenfest photon-redshift equilibrium); the weak-field approximation
+enters only when one inserts the linearized Schwarzschild metric factor as √(1 − 2GM/rc²) ≈ 1 − GM/rc². The
+escrow translation of the Schwarzschild redshift in equation (9) is therefore weak-field, but the underlying Tolman
+relation is not. The exact Schwarzschild form can be obtained by inserting the full metric factor into the Tolman
+relation rather than by extending the escrow translation itself. The framework's structural commitment at this level is
+to the weak-field reading of equation (9), with the strong-field exact form available through the (exact) Tolman
+relation.
+
+The escrow framework's contribution at this level is interpretive, not predictive. No measurement of time
+dilation distinguishes the escrow reading from the standard GR reading; the equations are identical. The framework's
+value, here, is a conceptual re-reading: the postulate S_esc = |U_grav|/T_U provides a single object — in the partlynotational sense developed in §V.G–H — through which time dilation, Tolman temperature, Unruh temperature, and
+gravitational binding energy are all expressed, replacing four separately-stated relations with one.
+This conceptual re-reading is what we will exploit in Section III, where we apply the same dictionary to the
+Jacobson derivation of Einstein's equations and the Bekenstein–Hawking entropy.
+
+E. A note on what the framework does not commit to
+We do not invoke a "vacuum computational bandwidth" or "information processing rate" reading of equation
+(10). Such readings appear in some popularizations of entropic gravity, and they are not part of the escrow postulate
+as stated in [1]. The framework's commitment is to the thermodynamic identity (6) and its consequences; it does not
+commit to a digital or computational substrate for the vacuum. The local rate of escrow production at radius r is a
+thermal quantity, set by T_U(r), and is correctly described in the vocabulary of equilibrium thermodynamics. No
+additional ontological structure is required to make equation (10) hold.
+Similarly, we do not introduce a separate "escrow stress-energy tensor" T_μν^escrow to be added to the matter
+stress-energy on the right side of Einstein's equation. The reason is structural: Einstein's equations are an algebraic
+identity between the matter stress-energy tensor T_μν^matter and the geometric Einstein tensor G_μν, and the
+Bianchi identities (∇^μ G_μν = 0) require ∇^μ T_μν^matter = 0 — the matter content already saturates the structure
+of conserved sources. Gravitational binding energy is not a localizable tensorial quantity in general relativity; it is
+encoded non-locally in the geometry itself (the difference, for an isolated system, between the ADM mass at infinity
+and the integrated rest mass on a spatial slice), and it cannot be added to T_μν^matter as an independent source. The
+escrow framework's S_esc is a thermodynamic interpretation of a configuration's gravitational binding content; it
+does not introduce a new tensor and does not augment Einstein's equation with any new stress-energy contribution.
+Attempting to do so would either violate the Bianchi identities or double-count: the geometry on the left of
+Einstein's equation already responds to the full gravitational configuration, and a separate escrow source would
+constitute a second response to the same physical content. This point will be developed further in Section III.
+
+III. THE JACOBSON TRANSLATION
+A. The standard statement
+In 1995, Jacobson showed [3] that Einstein's field equations follow from demanding that the thermodynamic
+relation δQ = T·dS hold across every local Rindler horizon, where T is the Unruh temperature of an observer
+accelerating just outside the horizon and dS is the area-law entropy of the horizon. The derivation is now standard
+and we recapitulate only the load-bearing steps. Consider a point p in spacetime and a small local Rindler horizon
+through p, defined by the future causal horizon of an accelerated observer with proper acceleration a passing through
+p. The Unruh temperature associated with this horizon is
+T_U = ℏa/(2πck_B)
+
+(11)
+
+The entropy associated with the horizon is its area in Planck units,
+S_horizon = A/(4ℓ_P²) · k_B
+
+(12)
+
+where ℓ_P = (ℏG/c³)^{1/2} is the Planck length. A small area element of the horizon expands or contracts as
+matter falls into the wedge behind it, and the rate of expansion is governed by the Raychaudhuri equation applied to
+the null geodesics generating the horizon.
+Jacobson's central insight was that demanding
+δQ = T_U · dS_horizon
+
+(13)
+
+hold at every such point p, for every choice of local Rindler horizon, forces the Einstein field equations on the
+spacetime:
+R_μν − (1/2)g_μν R + Λg_μν = (8πG/c⁴) T_μν
+
+(14)
+
+where T_μν is the matter stress-energy tensor whose flux δQ across the horizon enters the left side of (13). The
+Raychaudhuri equation supplies the geometric content; the Clausius relation δQ = T·dS supplies the thermodynamic
+
+content; the combination is Einstein's equation. This derivation is not specific to Schwarzschild or to any particular
+solution — it holds locally everywhere, for every observer.
+Jacobson's result establishes that Einstein's equation has the standing of a thermodynamic equation of state of
+the vacuum, analogous to the ideal-gas law PV = NkT emerging from molecular kinetics rather than being
+postulated fundamentally. The metric, in this reading, is what you get when the vacuum's entropy obeys the second
+law locally everywhere; it is not a separate object whose dynamics need to be derived from a Lagrangian.
+
+B. The escrow translation
+The static escrow postulate identifies the entropy held against the local Unruh temperature as the gravitational
+binding energy divided by that temperature: S_esc = |U_grav|/T_U (equation 6). Jacobson's derivation uses T = T_U
+and S = S_horizon (the horizon area entropy). The question is: what is the relationship between S_horizon as it
+appears in Jacobson's derivation and S_esc as it appears in the escrow postulate?
+The answer is that they are the same quantity, evaluated at different scales. Jacobson's S_horizon is the entropy
+associated with a particular local Rindler horizon — a coarse-grained quantity defined at the level of the horizon's
+area. The escrow entropy S_esc is the entropy held against the same Unruh temperature by whatever mass-energy is
+in the wedge behind that horizon. The first law of horizon thermodynamics, applied to a small flux of mass-energy
+crossing the horizon, equates these two: a flux δQ of energy at temperature T_U across the horizon produces a
+change δS in the horizon entropy, and that δS is exactly δQ/T_U = δ|U_grav|/T_U — the change in escrow entropy
+associated with the flux. We note that the first law relates the two entropies at the differential level (δS_horizon =
+δS_esc); the finite identification S_horizon = S_esc for a Schwarzschild black hole of mass M follows from this
+differential relation together with integrability along the formation path, and is confirmed directly by the algebraic
+calculation in §III.C (equations 17–18). The finite-level confirmation does not depend solely on the differential
+argument.
+In escrow language, Jacobson's identity (13), with the substitution S_horizon → S_esc justified at the
+differential level by the first law and confirmed at the finite level by §III.C below, reads
+δQ = T_U · dS_esc
+
+(15)
+
+which is the differential version of the static escrow postulate (6). The static postulate says S_esc =
+|U_grav|/T_U; the differential form says that the change in escrow entropy across a horizon equals the heat flux
+across that horizon divided by the local Unruh temperature. These are the same statement. Equation (15) is therefore
+not a new equation. It is Jacobson's (13) with S_horizon replaced by S_esc, justified by the observation that the
+horizon entropy is exactly the entropy held against the horizon's Unruh temperature — which is the escrow
+definition.
+The substitution buys nothing mathematically. It buys an interpretation: what the horizon is doing,
+thermodynamically, is bookkeeping the gravitational binding energy of the matter behind it. The horizon area grows
+when matter falls in because the matter brought additional binding energy to the wedge, and that additional binding
+energy must be held in escrow against the horizon's Unruh temperature. The escrow framework supplies the answer
+to the question "what is the horizon's entropy the entropy of?" — it is the entropy held in escrow against the local
+Unruh temperature by the gravitationally bound mass-energy in the wedge.
+
+C. Why the substitution is legal
+The identification S_horizon = S_esc requires that two independently defined quantities coincide. The first is
+the horizon area entropy A/(4ℓ_P²) · k_B, which is a property of the horizon geometry alone. The second is the
+escrow entropy |U_grav|/T_U, which is a property of the matter content and the local Unruh temperature. We now
+show that these are equal.
+Consider a Schwarzschild black hole of mass M. The Schwarzschild radius and surface gravity at the horizon
+are
+r_s = 2GM/c²,
+
+κ = c⁴/(4GM)
+
+The Hawking temperature — the Tolman-redshifted (asymptotic) Unruh temperature of an observer hovering
+near the horizon, finite at infinity even though the local Unruh temperature of a static observer diverges as r → r_s,
+with
+T_H = lim_{r→r_s} T_Unruh(r) · √(−g_tt(r))
+
+— is
+T_U = ℏκ/(2πck_B) = ℏc³/(8πGMk_B)
+
+(16)
+
+The self-binding energy of the configuration at the horizon scale is |U_grav| = GM²/r_s = Mc²/2 (a direct
+consequence of the Schwarzschild radius definition). This value also coincides with the Schwarzschild (Q = J = 0)
+limit of the Smarr identification T_H S_BH = (M − ΦQ − 2Ω_H J)/2 used in §III.D below, which gives the Mc²/2
+choice a thermodynamic motivation — it is the gravitational sector of the Smarr decomposition, with the
+electrostatic and rotational sectors vanishing for an uncharged non-rotating horizon — alongside the algebraic
+GM²/r_s motivation. This choice of |U_grav| is one of the four regime-specific identifications enumerated in §V.G;
+it is not derived from a single covariant binding-energy construction (such a construction is identified there as an
+open theoretical task) but is adopted because it produces the algebraic match with S_BH that the present subsection
+demonstrates. The escrow entropy is therefore
+S_esc/k_B = |U_grav|/(k_B T_U) = (Mc²/2) · (8πGMk_B)/(ℏc³ k_B) = 4πGM²/(ℏc) ≡ 𝒩_esc^Schw
+
+(17)
+
+where we have introduced the horizon analog of the dimensionless escrow count — 𝒩_esc^Schw ≡
+4πGM²/(ℏc) = 4π(M/m_P)², with m_P = √(ℏc/G) the Planck mass — in analogy with the test-mass count 𝒩_esc ≡
+2πr/λ_C of equation (8') in §II.B. The horizon count 𝒩_esc^Schw measures the gravitationally bound mass-energy
+of a Schwarzschild black hole in units of the Planck-scale escrow quantum. We are explicit that 𝒩_esc and
+𝒩_esc^Schw are not the same physical quantity in the literal sense: the test-mass 𝒩_esc has the geometric
+interpretation 'reduced Compton wavelengths fitting into the orbital circumference' (a mode count in the sense of
+counting wavelengths around a closed curve), while 𝒩_esc^Schw is the Bekenstein–Hawking entropy in
+dimensionless form (scaling as M² rather than as the linear mr of the test-mass case). They belong to the same
+family of dimensionless escrow constructions — each arising from the postulate S = |U|/T applied in a different
+regime — but the family is bound by the common postulate, not by a single geometric mode-count formula. The
+shared notation marks the structural relationship; the regime label ('^Schw') marks the difference in physical content.
+The Bekenstein–Hawking entropy of the same horizon is
+S_BH/k_B = A/(4ℓ_P²) = 4πr_s² c³/(4ℏG) = 4πGM²/(ℏc) = 𝒩_esc^Schw
+
+(18)
+
+Equations (17) and (18) are identical. The escrow entropy of a Schwarzschild black hole, computed from the
+self-binding energy and the Hawking temperature via the static escrow postulate, equals the Bekenstein–Hawking
+entropy exactly. There is no approximation and no fudge factor; the geometric 4π in the horizon area is recovered
+exactly by the geometric 4π in the Hawking temperature formula. This is the content of the static escrow postulate's
+recovery of Bekenstein–Hawking, originally reported in the framework paper [1], restated here in the Jacobsontranslation context.
+The Bekenstein–Hawking formula by itself supplies the relation between area and entropy without supplying an
+interpretation of what the entropy is the entropy of. The escrow framework supplies that interpretation: the horizon
+entropy is the entropy held in escrow against the local Unruh temperature by the gravitationally bound mass-energy
+inside the horizon. This is a structural interpretive claim, equivalent in mathematical content to Bekenstein–
+Hawking but distinct in physical reading. The horizon's area-as-entropy is not a coincidence of dimensional analysis
+nor an axiom requiring separate justification — it is the escrow of the matter trapped behind the horizon, evaluated
+at the horizon's own Unruh temperature.
+
+D. Extension to Reissner–Nordström and Kerr horizons
+A natural question for the escrow postulate, raised in adversarial review of this paper, is whether the
+Schwarzschild recovery in equations (17)–(18) is the only horizon entropy the postulate gets right, or whether the
+same form S_esc = |U_grav|/T_H continues to recover Bekenstein–Hawking entropies for charged (Reissner–
+Nordström) and rotating (Kerr) black holes. We report the result of that test, with explicit attention to what is and is
+not established by it.
+For a Reissner–Nordström black hole of mass M and charge Q (in geometrized units G = c = k_e = 1, with k_e
+= 1/(4πε₀) the Coulomb constant), the outer and inner horizons, area, and Hawking temperature are
+r_± = M ± √(M² − Q²),
+
+A = 4πr_+²,
+
+T_H = (r_+ − r_−)/(4πr_+²)
+
+The Smarr formula relates these to the mass:
+M = 2T_H S_BH + Φ Q
+
+where Φ = Q/r_+ is the electrostatic potential at the horizon and S_BH = A/4 is the Bekenstein–Hawking
+entropy. Rearranged,
+T_H S_BH = (M − Φ Q)/2 = (M − Q²/r_+)/2
+For the escrow postulate S_esc = |U_grav|/T_H to recover S_BH exactly, the gravitational binding energy must
+satisfy
+|U_grav|^RN = (M − Q²/r_+)/2
+
+(geometrized);
+
+(Mc²/2) − k_e Q²/(2r_+) (SI)
+
+i.e. the Schwarzschild binding minus the electrostatic energy stored at the horizon.
+For Kerr (mass M, angular momentum J = Ma), the horizon radius, area, and Hawking temperature are
+r_+ = M + √(M² − a²),
+
+A = 4π(r_+² + a²),
+
+T_H = (r_+ − r_−)/(4π(r_+² + a²))
+
+and the Smarr formula reads
+M = 2T_H S_BH + 2Ω_H J
+where Ω_H = a/(r_+² + a²) is the angular velocity of the horizon. Rearranged,
+T_H S_BH = (M − 2Ω_H J)/2
+The required Kerr binding energy is therefore
+|U_grav|^Kerr = (Mc²/2) − Ω_H J
+the Schwarzschild binding minus the rotational work term.
+Both extensions are exact: with these natural identifications of |U_grav|, the escrow postulate recovers S_BH for
+RN and Kerr to all displayed digits across the parameter range, including near extremality (where T_H → 0 and
+S_esc takes the 0/0 form whose limit is the finite extremal entropy). The structural pattern is consistent across all
+three cases: |U_grav| equals the Schwarzschild gravitational binding minus the matter-field chemical-potential terms
+(Φ Q for charge, Ω J for rotation) that appear in the first law of black hole mechanics.
+We are explicit about the interpretive status of these extensions. They are structural-consistency checks rather
+than independent predictions. The Smarr formula, which is itself derivable from the area law and the first law,
+already specifies T_H S_BH as (M − ΦQ − 2Ω_H J)/2; the escrow postulate's apparent "recovery" of S_BH for RN
+and Kerr is the algebraic statement that |U_grav| is identified with this same quantity. The framework does not
+independently specify |U_grav| for charged or rotating configurations and then derive S_BH; it adopts the chemicalpotential decomposition that the first law already supplies, and reads off the consistency. What the consistency
+check does establish is that the escrow postulate's form S_esc = |U_grav|/T_H survives the addition of matter fields
+and rotation without modification, which is a non-trivial structural fact: a postulate that produced S_BH only for
+Schwarzschild and failed for RN or Kerr would be ruled out by these calculations. The escrow framework is
+therefore consistent with the full first law of black hole mechanics, not just with the Schwarzschild special case.
+
+E. What this section does and does not establish
+This section does not derive Einstein's field equations from the escrow postulate. Jacobson did that in 1995 [3],
+using δQ = T·dS as input. What this section establishes is that the S appearing in Jacobson's input has the
+interpretation S = S_esc, with the consequence that the derived Einstein equation is the equation of state of the
+vacuum's escrow thermodynamics.
+Two consequences follow. First, the escrow framework does not require any modification of Einstein's
+equations; it provides an interpretation of why those equations have the structure they do. The cosmological constant
+Λ appears on the left side of (14) without special handling because Jacobson's derivation produces it as an
+integration constant in the same way it produces the rest of the geometry. Second, attempts to add a separate
+"escrow stress-energy tensor" to the right side of Einstein's equation are explicitly ruled out by this derivation: the
+entire content of δQ on the right side of Jacobson's identity is already the matter stress-energy flux T_μνk^μk^νdA
+dλ (where k^μ is the null generator of the horizon and λ is the affine parameter). The escrow contribution lives
+entirely in the interpretation of the S on the left side, not in any additional source on the right.
+The framework's value at this level is the same as it was for time dilation: a conceptual re-reading. Jacobson's
+derivation, the Bekenstein–Hawking formula, the Tolman temperature law, the Unruh effect, and the static escrow
+
+postulate are five separately-derived results that the escrow framework expresses through a common thermodynamic
+object S_esc. None of these results is modified; their interrelation is made transparent.
+
+F. A note on what the framework does not commit to
+We follow Jacobson in treating equation (14) as "an" equation of state rather than asserting that spacetime is
+literally a thermodynamic system in some fundamental sense. The thermodynamic analogy is structural — the same
+Clausius relation, the same area-as-entropy identification, the same local equilibrium condition — not ontological.
+We do not claim that spacetime is built out of more fundamental thermodynamic degrees of freedom in the way that
+an ideal gas is built out of molecules. Such a claim would require identifying the microscopic constituents whose
+statistical mechanics produces the area law; this is the project of quantum gravity and is not addressed by the escrow
+framework.
+Similarly, we do not claim that the entropy in equation (15) is observer-independent. The Unruh temperature
+depends on the choice of accelerated observer; the horizon depends on the choice of local Rindler frame; the escrow
+entropy inherits both dependences. What is observer-independent is the relation δQ = T_U · dS_esc, which holds for
+every observer in their own frame. This observer-dependence is a feature of the thermodynamic interpretation, not a
+bug: it is what distinguishes Jacobson's reading of GR from a global-entropy interpretation in which a unique S is
+assigned to a spacetime. Different observers see different escrow entropies because they have different local Unruh
+temperatures; the field equation (14) is what enforces consistency across observers.
+The escrow framework's identification of S_horizon with S_esc therefore does not add a substantive claim
+beyond what Jacobson's derivation already commits to. It supplies a name and an interpretation for the entropy that
+Jacobson uses as input.
+
+IV. THE MODULAR HAMILTONIAN CONNECTION
+A. The standard statement
+Dimensional bookkeeping for this section: throughout §IV we follow the standard entanglement-entropy
+convention in which the modular Hamiltonian K is dimensionless (it appears as the exponent in the reduced density
+matrix ρ = exp(−K)/Z, so dimensionlessness is required by the exponential's argument). Entanglement entropy S_EE
+in this convention is also dimensionless (a count, measured in nats or equivalently in units of k_B). Where this
+section writes T_U · ΔS_EE or T_U · Δ⟨K⟩, the implicit factor of k_B converting dimensionless entropy to
+thermodynamic entropy is understood: the energy associated with a modular-Hamiltonian-content change Δ ⟨K ⟩ at
+Unruh temperature T_U is k_B T_U · Δ⟨K⟩, exactly as in §IV.A's calculation ΔK · k_B · T_U(d1) = mc². Sections
+II and III used the alternative convention in which S is written in J/K from the start (with k_B explicit in each
+formula); the two conventions differ only by where the k_B is placed, and we use whichever is cleaner in each
+setting. Equations (19) and (20) below are written in the entanglement-entropy convention; explicit k_B factors are
+inserted where the equation crosses into thermodynamic-entropy quantities.
+Jacobson's derivation [3] uses the horizon area entropy as the input S in δQ = T·dS, with the area law itself
+taken as a given. A subsequent body of work, of which the most consequential single result is due to Faulkner,
+Guica, Hartman, Myers, and Van Raamsdonk (FGHMV, [5,6]), establishes a related but distinct identification: in
+asymptotically AdS spacetimes, demanding the entanglement-entropy first law δS_EE = δ ⟨K ⟩ for vacuum-state
+perturbations across spherical entangling surfaces forces the linearized Einstein equations in the bulk. Here S_EE is
+the entanglement entropy of a region of the boundary CFT, K is the modular Hamiltonian of that region in the
+vacuum state (the operator whose exponential gives the reduced density matrix on the region), and δ ⟨K ⟩ is the
+expectation value of K in the perturbed state minus its value in the vacuum.
+The FGHMV result is structurally similar to Jacobson's but operationally distinct in two respects. First, it uses
+entanglement entropy rather than horizon area as the input quantity, with the Ryu–Takayanagi formula [10]
+supplying the bulk-area dual of the boundary entanglement. Second, it produces linearized Einstein equations rather
+than the full nonlinear theory, with the linearization being around the AdS vacuum. Subsequent work has extended
+the result to broader settings, including non-spherical entangling regions and curved-background perturbations, with
+the unifying structural statement being that the gravitational equations of motion are equivalent to the requirement
+that relative entropy (a closely related and equally fundamental information-theoretic quantity) be non-negative for
+vacuum-state perturbations.
+
+The vacuum modular Hamiltonian for a Rindler wedge has an exact form, originally derived by Bisognano and
+Wichmann [11]:
+K = (2π/(ℏc)) ∫ x⊥ T_00(x) dV
+where x⊥ is the perpendicular distance from the cut and T_00 is the energy density. This is the same 2π that
+appears in the Unruh temperature — the modular flow generated by K is exactly the boost flow that defines the
+Rindler wedge, and the period 2π in boost parameter corresponds to the inverse Unruh temperature. The Bisognano–
+Wichmann formula gives a sharp prediction for the change in modular Hamiltonian content induced by inserting a
+localized energy E = mc² at perpendicular distance d1 from the cut:
+ΔK = 2π·m·d1
+
+(natural units; ℏ = c = k_B = 1)
+
+or equivalently, restored to SI units,
+ΔK = 2π·m·c·d1/ℏ = 𝒩_esc(d1)
+(a dimensionless quantity, as required of a modular Hamiltonian content), where 𝒩_esc(d1) is the escrow count
+of equation (8') evaluated at r = d1. The associated energy at the Rindler-observer Unruh temperature is
+T_U(d1) = ℏc/(2π·d1·k_B),
+
+ΔK·k_B·T_U(d1) = mc²
+
+— the rest energy of the perturbation. This is the prediction that the lattice paper [2] tests numerically in free
+scalar field theory on regulated 1+1D and 3+1D lattices.
+
+B. The escrow translation
+The escrow postulate identifies S_esc = |U_grav|/T_U as the entropy held against the local Unruh temperature
+by gravitationally bound mass-energy. The FGHMV result uses S_EE and the modular Hamiltonian K, neither of
+which is identical to S_esc as defined. The question is: what is the relationship between the escrow entropy and the
+modular Hamiltonian content?
+The relationship is mediated by the local first law. For a vacuum-state perturbation localized in a Rindler
+wedge, the entanglement-entropy first law δS_EE = δ⟨K⟩ says that the change in entanglement entropy of the wedge
+(in dimensionless units; see the unit-convention statement at the top of §IV.A) equals the change in expectation
+value of the wedge's modular Hamiltonian. The product k_B · T_U · δS_EE has units of energy and represents the
+heat content associated with the entanglement change. Identifying this with the gravitational binding energy of the
+perturbation gives
+|U_grav| = k_B · T_U · ΔS_EE = k_B · T_U · Δ⟨K⟩
+
+(19)
+
+which, by the escrow postulate (6) S_esc = |U_grav|/T_U, means
+S_esc = k_B · ΔS_EE = k_B · Δ⟨K⟩
+
+(20)
+
+with the explicit k_B factor converting the dimensionless entanglement-entropy quantities of the entanglementgravity literature into the thermodynamic-entropy units in which S_esc was defined in §II. The dimensionless
+content of equation (20) is S_esc/k_B = ΔS_EE = Δ⟨K⟩, which is what the lattice computations of [2] compute
+directly.
+We are explicit about the regime-bridging assumptions that this identification carries. The FGHMV result [5,6]
+is formulated for asymptotically AdS spacetimes with spherical entangling surfaces on the boundary CFT, with the
+relevant entropy being the entanglement entropy of a boundary subregion and the relevant modular Hamiltonian
+being the operator generating modular flow for the vacuum reduced density matrix of that subregion. The escrow
+framework's identification in (19)–(20) applies the same first-law structure to a localized perturbation in a flat-space
+Rindler wedge, where T_U is the Unruh temperature of an accelerated observer. The bridge between these two
+settings carries three distinct technical assumptions, each well-established in the entanglement-entropy literature
+[5,6,11,12,13] but each worth stating individually: (a) the modular-Hamiltonian content of a Rindler wedge in
+Minkowski vacuum is given by the Bisognano–Wichmann formula K = (2π/(ℏc)) ∫ x⊥ T_00 dV, where x⊥ is
+perpendicular distance from the cut; (b) the entanglement-first-law statement δS_EE = δ ⟨K ⟩ carries over from the
+boundary CFT setting to a flat-space Rindler wedge in the linear-response regime, with no curvature corrections to
+the first law at this order; (c) the gravitational binding energy of the localized perturbation, identified with the source
+energy mc², plays the same role on the matter side that boundary-CFT energy density plays in the AdS setting. Each
+of (a), (b), (c) is standard in the literature but each is an additional assumption beyond the bare FGHMV statement.
+
+We treat all three as assumptions rather than as derived statements, and the framework's modular-Hamiltonian leg
+therefore inherits whatever caveats attend each of these standard identifications in the broader entanglement-gravity
+literature.
+The escrow entropy of a localized mass perturbation, under this identification, equals both the change in
+entanglement entropy of the wedge containing it and the change in expectation value of the wedge's modular
+Hamiltonian. Equation (20) is the strongest interpretive content of the escrow framework: the escrow entropy is the
+modular-Hamiltonian content of a localized gravitational perturbation, with the FGHMV result then identifying the
+consistency requirement on this content with linearized Einstein equations.
+If equation (20) held exactly, the modular Hamiltonian content of a localized mass m at perpendicular distance
+d1 from the cut would equal the escrow count 𝒩_esc(d1) = 2π·m·c·d1/ℏ (the dimensionless content of equation 8'
+with r = d1). The Bisognano–Wichmann formula gives exactly this. Equation (20) therefore predicts that lattice
+computations of ΔK in regulated free scalar field theory should yield the BW linear asymptote with prefactor unity,
+i.e. ΔK = 𝒩_esc(d1) at small d1 in the half-space limit. This is the prediction the lattice paper [2] tests numerically.
+
+C. What the lattice tests
+The lattice paper [2] computes ΔK directly on regulated free scalar lattices in 1+1D (chain, N up to 3000) and
+3+1D (cubic, N up to 14) using the Williamson-decomposition method, with two protocols: a two-mass protocol
+with masses at perpendicular distances d1 and d2 from the cut, and a single-mass-in-A protocol with a single mass at
+d1 (the latter being the cleaner test of the BW prediction). The numerical results, summarized in [2], are:
+In 1+1D at small d1 (d1 ∈ [2, 6] at m = 1, N = 1000), the local power-law exponent of ΔK vs d1 is +1.02 ±
+0.05, indistinguishable from the BW linear asymptote α = 1. The prefactor is approximately 0.030–0.037,
+corresponding to a suppression of approximately 1/30 of the literal BW value. At larger d1 the local exponent
+decreases smoothly toward zero, reflecting geometric corrections to the BW half-space assumption (Dirichlet
+boundary conditions, finite subsystem-A depth). The peak prefactor is independently reproducible from the lattice
+paper's published methodology, with both V1 (relative-entropy positivity) and V2 (modal-versus-original-basis
+cross-check) sanity checks passing at every d1 in the sweep; the analytic origin of the prefactor remains the open
+theoretical problem identified in this section.
+In 3+1D at all d1 the lattice can resolve (N ≤ 14, d1 ≤ 6), ΔK(d1) is peaked at d1 ≈ 2 and decays as d1^{−2 to
+−3} for d1 ≥ 3. The BW linear asymptote is not recovered at any d1 the lattice can resolve. The peak structure
+reproduces across N = 12 and N = 14, indicating that the result is not a finite-size artifact at the lattice sizes used.
+Taken at face value, these results constrain equation (20) in two ways. In 1+1D, the equation holds
+approximately within a small-d1 window with a prefactor suppression of 1/30; the prefactor has no presentlycalculated origin, and finding one is the principal open theoretical question. In 3+1D, the equation does not hold
+within the d1 range the lattice can resolve; whether it can be recovered at much larger d1 inaccessible to the present
+lattice (corresponding to a slower rate of approach to the continuum BW asymptote in higher dimensions) is an open
+empirical question.
+
+D. What this section does and does not establish
+This section does not establish equation (20) as a derived identity. It identifies (20) as the natural escrow
+reading of the FGHMV result, with [2] supplying empirical content on whether the identification holds when both
+sides are computed independently. The 1+1D partial recovery and the 3+1D non-recovery within accessible d1 are
+the present state of evidence; neither rules out (20) fundamentally, and neither establishes it without qualification.
+Three distinct theoretical questions are sharpened by this section. First, what is the calculable origin of the 1/30
+prefactor in 1+1D? A candidate explanation flagged in [2] is that the lattice-regularized free scalar at m = 1 has
+correlation length ξ ∼ 1/m ∼ 1 lattice spacing, making the localized mass a UV-scale perturbation by the lattice's
+own measure, while the BW formula is an infrared / long-wavelength prediction. The 1/30 suppression may reflect a
+UV/IR mismatch correctable by a first-principles calculation of the lattice-regulated modular Hamiltonian. The
+Dirichlet boundary conditions used for the lattice differ from the free BCs assumed in the standard BW derivation,
+and the boundary-correction factor is another candidate contribution. Resolving the prefactor's origin from first
+principles is the single most consequential follow-up calculation the framework presently faces.
+Second, does the 3+1D non-recovery reflect a genuinely shorter characteristic length scale of the 3+1D modular
+Hamiltonian content, or a slower rate of approach to the continuum BW limit due to the smaller conformalsymmetry group of the 3+1D massless free scalar? The 1+1D massless scalar is a CFT with infinite-dimensional
+
+Virasoro symmetry; the 3+1D massless scalar has only the finite-dimensional conformal group, and the rate at
+which the lattice-regularized modular content approaches the continuum BW asymptote may differ between them
+for this reason. The 3+1D test on N ≳ 20 lattices (computationally feasible on dedicated GPU hardware but not on
+the present authors' CPU resources) would distinguish these two interpretations.
+Third, what is the dimensional-dependence theorem, if any, connecting 1+1D BW partial recovery to the 3+1D
+structure observed in [2]? A 2+1D test on the same protocol would be the natural intermediate case and would
+determine whether the dimensional dependence is monotone. The present authors leave this as a future calculation.
+
+E. A note on what the framework does not commit to
+We do not claim that the lattice paper [2]'s partial recovery in 1+1D establishes equation (20) as a derived
+identity. The 1/30 prefactor is an unexplained suppression, not a confirmed match; the framework's interpretive
+content at this level depends on that prefactor having a calculable origin, and the calculation has not been performed.
+The framework is at risk of being read as having empirical confirmation it does not yet have, and we explicitly
+disclaim that reading: [2] is consistent with the escrow framework's modular-Hamiltonian identification at the level
+of qualitative structure (positive sign, linear scaling at small d1, the right dimensionless quantity 𝒩_esc), but it is
+not yet quantitatively confirmed at the level of the absolute prefactor.
+We do not claim that the 3+1D non-recovery rules out the escrow framework. As stated above, the rate-ofapproach question is unresolved by the present lattice sizes, and a finding that 3+1D BW is recovered at much larger
+d1 inaccessible to the present lattice would resolve the non-recovery as a finite-size effect rather than a fundamental
+obstruction. The framework's commitment is to the postulate (6) and the interpretive content of equations (10), (15),
+(17), and (20); empirical confirmation of these at the lattice level is partial and dimensional, and we describe it as
+such.
+We do not invoke any extension of equation (20) beyond the FGHMV setting. The FGHMV result is
+established for asymptotically AdS spacetimes with spherical entangling surfaces and vacuum-state perturbations.
+Extensions to other settings (flat-space, non-vacuum states, non-spherical regions, large perturbations) are areas of
+active research [12,13], and we do not claim that the escrow framework's identification (20) carries through to those
+extensions automatically. The framework's modular-Hamiltonian content as expressed in (20) is, like the FGHMV
+result, presently a statement about the linear-response / small-perturbation regime in asymptotically AdS-like
+settings.
+
+V. CONSOLIDATED GUARDRAILS
+Sections II.E, III.E, and IV.E each conclude with explicit statements of what the escrow framework does not
+commit to in the local context of that section. We consolidate those statements here as a single list, for use in
+subsequent work and in defense against the failure modes documented in the framework's history.
+
+A. No escrow stress-energy tensor
+The escrow framework does not introduce a separate "escrow stress-energy tensor" T_μν^escrow to be added to
+the matter stress-energy on the right side of Einstein's equation. The reason is structural and matches the discussion
+in §II.E: Einstein's equations are an algebraic identity between the matter stress-energy tensor T_μν^matter and the
+geometric Einstein tensor G_μν, and the Bianchi identities (∇^μ G_μν = 0) require ∇^μ T_μν^matter = 0 — the
+matter content already saturates the structure of conserved sources. Gravitational binding energy is not a localizable
+tensorial quantity in general relativity; it is encoded non-locally in the geometry itself (the difference, for an isolated
+system, between the ADM mass at infinity and the integrated rest mass on a spatial slice), and it cannot be added to
+T_μν^matter as an independent source. Attempting to add a separate escrow source on the right side of Einstein's
+equation would either violate the Bianchi identities or double-count the gravitational configuration: the geometry on
+the left side already responds to the full configuration through its non-local encoding of binding energy, and the
+matter content on the right side already saturates the conservation structure. The escrow framework supplies an
+interpretive dictionary for the existing fields; it does not augment the field equation with any new contribution.
+Jacobson's derivation [3] makes this constraint particularly sharp: the entire content of δQ on the right side of his
+Clausius identity is already the matter stress-energy flux T_μνk^μk^νdA dλ, with no remaining room for an
+additional escrow source. Attempts to extend the framework with additional source terms reduce to either trivial
+restatements of the matter source (no new physics) or violations of Jacobson's derivation (which would require
+modifying the input δQ = T·dS, not merely adding to the output).
+
+B. No vacuum computational substrate
+The escrow framework does not invoke a "vacuum computational bandwidth," "information processing rate," or
+digital substrate reading of the static escrow postulate. Such readings appear in some popularizations of entropic
+gravity — typically expressed as "the vacuum is a computer with finite processing capacity, and gravity emerges
+because the computer's bandwidth is partially consumed by holding the escrow" — but they are not part of the
+postulate as stated in [1]. The local rate of escrow production at radius r is a thermal quantity, set by T_U(r), and is
+correctly described in the vocabulary of equilibrium thermodynamics. No additional ontological structure is required
+to make the framework's predictions hold. The framework's interpretation of why time dilation gives the rate it gives
+(equation 10) is the thermodynamic Tolman-temperature reading, not a computational-bandwidth reading.
+
+C. No claim about microscopic vacuum constituents
+The escrow framework, like Jacobson's derivation, treats the Einstein equation as "an" equation of state of the
+vacuum rather than asserting that spacetime is literally a thermodynamic system in some fundamental sense. The
+thermodynamic analogy is structural — the same Clausius relation, the same area-as-entropy identification, the same
+local equilibrium condition — not ontological. We do not claim that spacetime is built out of more fundamental
+thermodynamic degrees of freedom in the way that an ideal gas is built out of molecules. Such a claim would require
+identifying the microscopic constituents whose statistical mechanics produces the area law; this is the project of
+quantum gravity and is not addressed here. The escrow framework operates entirely at the level of the macroscopic
+thermodynamic identity; it makes no commitment to the underlying microphysics.
+
+D. Observer-dependence of S_esc
+The escrow entropy S_esc is not observer-independent. The Unruh temperature depends on the choice of
+accelerated observer; the local Rindler horizon depends on the choice of local Rindler frame; the escrow entropy
+inherits both dependences. What is observer-independent is the relation δQ = T_U · dS_esc and its consequence
+(Einstein's equation, equation 14), which hold for every observer in their own frame. This observer-dependence is a
+feature of the thermodynamic interpretation, not a bug: it is what distinguishes the escrow framework's reading of
+GR from a global-entropy interpretation in which a unique S is assigned to a spacetime. Attempts to define a global,
+observer-independent S_esc reduce either to the global entropy of the universe (which is not what the static escrow
+postulate is about) or to the integrated horizon-flux entropy (which is Jacobson's input, not new content).
+
+E. No empirical confirmation of equation (20)
+The lattice paper [2]'s partial recovery of the Bisognano–Wichmann linear asymptote in 1+1D at small d1 with
+a 1/30 prefactor is not a confirmation of equation (20). The 1/30 suppression is an unexplained empirical
+observation; resolving its origin from first principles (UV/IR mismatch, Dirichlet boundary correction, lattice
+regularization artifact, or fundamental modification of the framework) is the principal open theoretical question. We
+disclaim any reading of [2] as providing empirical confirmation of the escrow framework's modular-Hamiltonian
+identification, and we similarly disclaim any reading of [2]'s 3+1D non-recovery as fundamentally ruling out the
+framework. The empirical situation is partial, dimensional, and unresolved; we describe it as such.
+
+F. No claim of new equations of motion
+The escrow framework does not produce new equations of motion. All gravitational dynamics in the
+framework's purview reduce to Einstein's equation (14), derived in the standard way via Jacobson [3] from δQ =
+T·dS, with the escrow framework's contribution being the interpretation of the S as S_esc. Attempts to extract new
+equations of motion from the escrow postulate — such as the C8 entropy-current attempt documented in [9] — have
+reduced to either rate-equation reformulations of known results (no new physics) or to violations of the framework's
+interpretive constraints (no new defensible physics). The framework's mathematical content is the static escrow
+postulate (6) and the consequences derived in [1]; its interpretive content is the dictionary developed in the present
+paper. No new dynamical content is claimed.
+
+G. |U_grav| is not given a single covariant definition
+Across the four legs of the translation, the symbol |U_grav| denotes different quantities. In §II (test mass in a
+static gravitational potential), |U_grav| = GMm/r is the Newtonian gravitational potential energy of a probe particle.
+In §III (Schwarzschild horizon), |U_grav| = Mc²/2 is the self-binding energy of the configuration at horizon scale,
+
+defined via GM²/r_s with r_s the Schwarzschild radius. In §III.D (Reissner–Nordström and Kerr), |U_grav| is
+identified with the chemical-potential decomposition (M − ΦQ − 2Ω_H J)/2 that the Smarr formula already supplies.
+In §IV (modular-Hamiltonian content of a localized perturbation), |U_grav| is the energy of the localized
+perturbation, formally identified with mc² for a point mass of rest mass m. These four definitions are not connected
+by a single covariant, observer-independent construction in standard general relativity. Quasilocal energy proposals
+(Brown–York, Hawking mass, Komar integrals for stationary configurations) are candidate constructions that could
+in principle supply such a covariant definition, but the escrow framework does not currently adopt one. We are
+explicit that the framework's |U_grav| is presently a family of regime-specific identifications glued together by
+common notation, and that providing a single covariant definition is an open theoretical task. This limitation does
+not undermine the consistency checks within each regime, but it does mean that the framework's claim to a 'single
+thermodynamic object' is partly notational: the object is S_esc in each regime, but the |U_grav| feeding into S_esc is
+regime-specific.
+
+H. T_U is used with two related but distinct conventions
+The Unruh temperature T_U is used in this paper with two conventions that are related by the Tolman shift but
+are not identical. In §II (test mass in a Newtonian potential), T_U is the local Unruh temperature of a stationary
+observer at radius r, computed from the local proper acceleration a = GM/r² via
+T_U = ℏa/(2πck_B) (local Unruh; §II convention)
+This T_U is what a local detector would register. In §III (Schwarzschild horizon), T_U is taken to equal the
+Hawking temperature
+T_H = ℏκ/(2πck_B),
+
+κ = c⁴/(4GM) (asymptotic Hawking; §III convention)
+
+where κ is the surface gravity of the horizon. The Hawking temperature is the redshifted (asymptotic) Unruh
+temperature of an observer hovering just outside the horizon; the local Unruh temperature diverges at the horizon,
+but its product with the Tolman redshift factor approaches the finite asymptotic value T_H. The two T_U
+conventions are therefore related by the Tolman shift
+T_local · √(−g_tt) = T_∞
+(the same exact Tolman relation invoked in §II.A), and they agree in the appropriate limits. We use 'T_U'
+uniformly in the body for notational economy, with the understanding that the local vs. asymptotic distinction is
+contextually determined by the regime under discussion. This unification at the level of notation is not a unification
+at the level of distinct physical observables: the local Unruh temperature and the asymptotic Hawking temperature
+are different operational quantities, related by the Tolman relation rather than identical.
+
+VI. CONCLUSION
+The static gravitational entropy escrow postulate of [1] admits an interpretive translation onto the established
+thermodynamic-gravity literature. The translation comprises four legs. In Section II, gravitational time dilation is
+recovered as the Tolman temperature shift expressed in escrow language, with the dimensionless escrow of a test
+mass identified as the escrow count
+𝒩_esc ≡ 2πr/λ_C
+— the number of reduced Compton wavelengths fitting into the orbit's circumference. In Section III, Jacobson's
+derivation of Einstein's field equations from δQ = T·dS at local Rindler horizons becomes the differential form of
+the static escrow postulate, with the Bekenstein–Hawking entropy of a Schwarzschild black hole recovered exactly
+(to all displayed digits, with no fudge factor) as
+S_BH/k_B = 𝒩_esc^Schw = 4π(M/m_P)²
+the escrow entropy of the configuration computed from its self-binding energy and the Hawking temperature. In
+Section IV, the FGHMV identification of the entanglement-entropy first law with linearized Einstein equations
+becomes the statement that the escrow entropy of a localized mass perturbation equals the modular-Hamiltonian
+content of the wedge containing it,
+ΔK = 𝒩_esc(d1) (BW prediction)
+
+Section V consolidates the explicit guardrails against the failure modes that the framework's history has
+surfaced.
+None of these results modifies any standard equation of general relativity, of quantum field theory, or of
+horizon thermodynamics. The escrow framework's contribution at the level treated in this paper is interpretive: it
+identifies a single thermodynamic object — S_esc — through which four otherwise-separately-derived results are
+expressed as faces of one identity. We note again (§V.G) that the 'single object' description is partly notational, as
+the |U_grav| feeding into S_esc takes regime-specific forms across §II, §III, §III.D, and §IV that have not yet been
+connected by a single covariant construction. The framework's broader empirical anchors live in [1] and depend on
+the horizon-thermodynamic content of the postulate, which is unchanged by the present paper.
+Three open theoretical problems are sharpened by the present translation. First, the calculable origin of the 1/30
+prefactor that suppresses the lattice paper's 1+1D modular-Hamiltonian content relative to the literal Bisognano–
+Wichmann asymptote remains unresolved. A first-principles calculation of the lattice-regularized modular
+Hamiltonian on the Dirichlet half-chain, accounting for the UV/IR mismatch between localized lattice masses and
+the long-wavelength BW prediction, is the calculation that would either explain the suppression (rehabilitating the
+framework's modular-Hamiltonian interpretation) or fail to explain it (constraining the framework). This is the
+single most consequential follow-up calculation the framework presently faces, and we identify it as the principal
+short-term research priority.
+Second, the 3+1D non-recovery of the BW asymptote within the lattice sizes accessible to [2] is unresolved as
+to whether it reflects a genuinely shorter characteristic length scale in higher dimensions or a slower rate of
+approach to the continuum BW asymptote due to the smaller conformal-symmetry group of the 3+1D massless free
+scalar. Lattice computations at N ≳ 20 (feasible on dedicated GPU hardware) would distinguish these interpretations
+and would constitute a decisive next-generation test. A 2+1D test would supply a natural intermediate dimensional
+case.
+Third, the dimensional-dependence theorem connecting 1+1D and 3+1D modular-Hamiltonian content is
+unidentified. Whether such a theorem exists — and what its form would be — is a question that the FGHMV
+framework, the Bisognano–Wichmann formula, and the lattice computations of [2] are all positioned to address
+jointly. The escrow framework's contribution to this question is the explicit identification of the dimensionless
+quantity 𝒩_esc ≡ 2πr/λ_C as the candidate organizing variable; whether it is the right variable, and whether its
+dimensional dependence is calculable, are open.
+A structural risk worth naming explicitly is that of retrofitted inevitability: the possibility that the escrow
+framework's apparent unification of the four results translated in this paper is an artifact of having seen those four
+results first and then constructed a dimensional combination (S_esc = |U_grav|/T_U) that connects them in
+retrospect, rather than the proposal of an organizing variable that would have constrained the four results in advance
+had it been known. The framework's escape from this failure mode is not interpretive but calculational. Equation
+(20) of §IV makes a sharp numerical prediction — the modular-Hamiltonian content of a localized mass
+perturbation should equal 𝒩_esc(d1) = 2π·m·d1 in natural units, with prefactor unity — and the lattice paper [2]
+tests it. The 1+1D result is a partial confirmation (correct linear scaling, suppressed prefactor); the 3+1D result is a
+non-recovery within accessible d1. Whether equation (20) is a real identity with a calculable correction factor, or an
+arbitrary dimensional combination that the lattice partially fits in 1+1D and fails to fit in 3+1D for unrelated reasons,
+depends on whether the 1/30 prefactor has a first-principles origin in lattice-regularization theory. A successful firstprinciples calculation would move the framework from "interpretive synthesis with retrofitted-inevitability risk" to
+"organizing variable with a calculable correction factor." A failed calculation would constrain the framework's
+modular-Hamiltonian leg. Either outcome is informative, and either outcome distinguishes the framework's content
+from a pure relabeling exercise. The framework's status as a candidate proposal rather than a derived theory is
+therefore reducible to a single open calculational question, which we name as such.
+To make the falsification structure explicit, we identify five conditions under which specific legs of the
+framework would be ruled out. (i) If a first-principles lattice calculation accounting for Dirichlet boundary
+conditions, lattice UV cutoff effects, and the finite half-chain depth produces a prefactor that disagrees with the
+lattice-measured 0.030–0.037 at the same protocol, the modular-Hamiltonian leg expressed in equation (20) is
+constrained or ruled out in its present form. (ii) If a 3+1D lattice computation at N ≥ 24 with d1 swept up to d1 ≤
+N/3 ≈ 8 fails to show approach toward the BW linear asymptote (i.e., the peak-then-decay structure of ΔK(d1)
+observed at N = 14 persists with the peak location not migrating significantly toward larger d1 and the decay
+exponent not flattening toward zero), the modular-Hamiltonian leg of the framework is constrained in 3+1D, the
+3+1D non-recovery becomes a structural feature requiring explanation rather than a finite-size artifact, and the
+
+framework retreats to its horizon-thermodynamic and Tolman-redshift content only. We name N ≥ 24 with d1 ≤ N/3
+as the concrete threshold rather than leaving 'any accessible d1' unbounded; computation at larger N remains
+informative but the framework would already be constrained at this threshold. (iii) If a charged or rotating black hole
+calculation reveals that the escrow postulate cannot recover S_BH for a configuration where the first law of black
+hole mechanics applies (i.e., a case not absorbed by the Smarr formula's chemical-potential decomposition), the
+horizon-thermodynamic leg of the framework is constrained. (iv) If a strong-field calculation (e.g., the exact
+Schwarzschild redshift for a compact object, or the analogous Kerr or Reissner–Nordström redshift) shows that the
+escrow translation of equation (9) produces a quantitatively wrong prediction when extended beyond the Newtonian
+weak-field limit — i.e., the iterated escrow identity does not reproduce √(−g_tt) at strong field within reasonable
+precision — the Tolman-redshift leg is constrained to remain a weak-field effective description, and the framework
+explicitly disclaims any strong-field reading of §II's translation. (v) If a rigorous theorem shows that Jacobson's
+S_horizon cannot be identified with any quasilocal energy construction (such as Brown–York energy, Hawking
+mass, or a Komar integral on the horizon) in a manner consistent with the escrow postulate's structural form S = |
+U|/T — i.e., if the open theoretical task named in §V.G is shown to have no positive resolution — the framework's
+claim that S_esc and S_horizon refer to the same underlying object is undermined, and the framework's Jacobsonleg content reduces to a notational coincidence rather than a structural identification. In each case the falsification is
+partial, removing one leg of the five-condition translation without necessarily ruling out the others. We note these
+explicitly rather than relying on implicit logical structure.
+We commit, in advance of the calculations named in conditions (i)–(v), to the following pre-registered
+retractions. If condition (i) is satisfied (the first-principles prefactor calculation disagrees with the lattice-measured
+0.030–0.037 at the same protocol), the modular-Hamiltonian leg of the framework will be withdrawn, and any
+successor version of this paper will publish only the time-dilation (§II) and Jacobson/Bekenstein–Hawking (§III)
+legs. If condition (ii) is satisfied (the N ≥ 24 lattice persistently shows the 3+1D peak-then-decay structure), the
+3+1D applicability of the framework will be withdrawn; the modular-Hamiltonian leg will be scoped explicitly to
+1+1D only. If condition (iii) is satisfied (a Smarr-resistant black-hole configuration fails to recover S_BH), the
+horizon-thermodynamic leg will be withdrawn. If condition (iv) is satisfied (the strong-field test produces a
+quantitatively wrong redshift prediction in the iterated escrow translation), §II will be explicitly scoped to the
+Newtonian weak-field limit and no strong-field claim will be defended. If condition (v) is satisfied (the §V.G open
+task is shown to have no positive resolution), the finite-level identification S_horizon = S_esc for static black holes
+(§III.C and §III.D) will be retracted as a structural claim and retained only as a notational coincidence; the
+differential-level identification δS_horizon = δS_esc (§III.B), which is the content of the escrow reading of
+Jacobson's derivation and depends on the first law rather than on a covariant binding-energy construction, does not
+depend on the §V.G open task and would remain intact. These pre-registered commitments are intended to make the
+framework's falsification structure costly rather than rhetorical: a Popperian theory carries with it the obligation to
+specify, in advance, what would constitute its failure and what one would do in response. We accept that obligation
+here and bind any future version of this paper to honor it.
+The escrow framework joins an existing body of thermodynamic and entropic interpretations of gravity.
+Jacobson's 1995 derivation [3], to which Section III is most directly indebted, derives Einstein's equations from δQ
+= T·dS at local Rindler horizons. Verlinde's 2011 entropic gravity proposal and its 2017 emergent-gravity extension
+take a related but distinct approach, deriving Newton's law from an entropy gradient on a holographic screen and
+relating the deep-MOND scale to the de Sitter horizon temperature. Padmanabhan's emergent-gravity program has
+long emphasized that gravitational field equations have the standing of a thermodynamic equation of state and that
+horizon thermodynamics is the natural variable for understanding gravity. The covariant entropy bound (Bousso)
+constrains the entropy of light-sheets and provides a related but operationally distinct entropy/area relation. The
+escrow framework's specific contribution within this literature is the identification of the dimensionless ratio 𝒩_esc
+≡ 2πr/λ_C (and its horizon analog 𝒩_esc^Schw ≡ 4π(M/m_P)²) as a candidate organizing variable for the
+thermodynamic interpretation, and the explicit modular-Hamiltonian identification of equation (20) as the falsifiable
+empirical content. We do not claim that the escrow framework supersedes Jacobson, Verlinde, Padmanabhan, or
+Bousso, or that it occupies a unique position relative to them; we claim that it is a specific proposal within the
+broader thermodynamic-gravity program, with the conceptual translation of this paper showing how it connects to
+the established literature and with the lattice paper [2] supplying its principal falsifiable test. For transparency on the
+citation chain: references [3]–[8] and [10]–[13] are peer-reviewed publications, while references [1], [2], and [9] are
+the present author's Zenodo preprints that have not yet been submitted to peer review; the framework's empirical
+anchor (the lattice paper [2]) and its theoretical anchor (the framework paper [1]) are therefore the author's own
+work, awaiting independent replication and peer review.
+
+The framework as it presently stands is best characterized as a candidate organizing variable for the
+thermodynamic interpretation of gravity, with the static escrow postulate as the proposed organizing relation, the
+lattice paper as the empirical anchor for its modular-Hamiltonian interpretation, the framework paper as the
+empirical anchor for its horizon-thermodynamic interpretation, and the present paper as the explicit conceptual rereading connecting these to the established thermodynamic-gravity literature. The translation is internally consistent
+and recovers standard results without modification. Whether the candidate organizing variable proves to be the right
+one is a question that the open theoretical problems above will determine, and that future empirical and analytical
+work will adjudicate.
+
+REFERENCES
+[1] G. L. Whitmer III, Gravitational Entropy Escrow: An Interpretive Synthesis of Thermodynamic Approaches
+to Gravity, Zenodo (2026), doi:10.5281/zenodo.20032023 (v0.6.11).
+[2] G. L. Whitmer III, A Lattice Quantum Field Theory Test of the Static Escrow Postulate: 1+1D and 3+1D
+Falsification with Modular-Hamiltonian Partial Survival, Zenodo (2026), doi:10.5281/zenodo.20043421
+(v0.7).
+[3] T. Jacobson, Thermodynamics of Spacetime: The Einstein Equation of State, Phys. Rev. Lett. 75, 1260
+(1995), arXiv:gr-qc/9504004.
+[4] R. C. Tolman and P. Ehrenfest, Temperature Equilibrium in a Static Gravitational Field, Phys. Rev. 36,
+1791 (1930).
+[5] T. Faulkner, M. Guica, T. Hartman, R. C. Myers, and M. Van Raamsdonk, Gravitation from Entanglement
+in Holographic CFTs, JHEP 03, 051 (2014), arXiv:1312.7856.
+[6] N. Lashkari, M. B. McDermott, and M. Van Raamsdonk, Gravitational Dynamics from Entanglement
+"Thermodynamics", JHEP 04, 195 (2014), arXiv:1308.3716.
+[7] J. D. Bekenstein, Black Holes and Entropy, Phys. Rev. D 7, 2333 (1973).
+[8] S. W. Hawking, Particle Creation by Black Holes, Commun. Math. Phys. 43, 199 (1975).
+[9] G. L. Whitmer III, On the Status of Local Entropy-Current Extensions of the Gravitational Entropy Escrow
+Framework: A Clarification Note, Zenodo (2026), doi:10.5281/zenodo.20041992 (v0.3.1).
+[10] S. Ryu and T. Takayanagi, Holographic Derivation of Entanglement Entropy from AdS/CFT, Phys. Rev.
+Lett. 96, 181602 (2006), arXiv:hep-th/0603001.
+[11] J. J. Bisognano and E. H. Wichmann, On the Duality Condition for Quantum Fields, J. Math. Phys. 17, 303
+(1976).
+[12] H. Casini, M. Huerta, and R. C. Myers, Towards a derivation of holographic entanglement entropy, JHEP
+05, 036 (2011), arXiv:1102.0440.
+[13] T. Faulkner, F. M. Haehl, E. Hijano, O. Parrikar, C. Rabideau, and M. Van Raamsdonk, Nonlinear Gravity
+from Entanglement in Conformal Field Theories, JHEP 08, 057 (2017), arXiv:1705.03026.
+
+VERSION NOTES
+v0.5.8 (May 2026) is a metadata-only revision correcting two front-matter items: the ZIP code on the affiliation
+line has been corrected from 12828 to 12827 (the correct ZIP for Fort Ann, NY; the original was a transcription
+error preserved from the v0.1 author block), and a contact email (grant@windstorminstitute.org) has been added
+beneath the ORCID line. No content, equation, derivation, numerical result, or claim is altered.
+v0.5.7 (May 2026) integrates seven small precision edits from final-pass reviews by Claude Opus 4.7
+(ultrathink), Moonshot Kimi K2.6, and Claude Opus 4.6. (i) CRITICAL: §V.A's consolidated guardrail against an
+'escrow stress-energy tensor' contained surviving v0.4 wording ('that energy contributes once, through the standard
+matter T_μν, to the source of the curvature on the left side') that contradicted the Bianchi-identity argument added to
+§II.E in v0.5. §V.A has now been rewritten to propagate the §II.E argument fully: binding energy is non-local in GR
+(encoded as the difference between ADM mass and integrated rest mass), not localizable in T_μν^matter, and
+Bianchi identities forbid adding a separate escrow source to the right side of Einstein's equation. (ii) §III.D's
+Reissner–Nordström setup specified 'geometrized units G = c = 1' but the formula Q²/r_+ as energy requires k_e =
+1/(4πε₀) also set to 1; the geometrized-units declaration now includes k_e = 1, and the SI restoration of |U_grav|^RN
+now includes the explicit k_e factor. (iii) §III.C's introduction of the horizon analog 𝒩_esc^Schw now includes an
+
+explicit clarifying sentence stating that 𝒩_esc (geometric mode count) and 𝒩_esc^Schw (dimensionless
+Bekenstein–Hawking entropy, scaling as M²) are not the same physical quantity in the literal sense but belong to the
+same family of dimensionless escrow constructions bound by the common postulate S = |U|/T rather than by a single
+geometric mode-count formula. (iv) Equation (15)'s introduction has been sharpened from 'Jacobson's central
+identity (13) reads' to 'Jacobson's identity (13), with the substitution S_horizon → S_esc justified at the differential
+level by the first law and confirmed at the finite level by §III.C below, reads' — distinguishing eq. (13) from its
+escrow-substituted form eq. (15). (v) Pre-registered retraction (v) in §VI has been narrowed to specify that the finitelevel identification S_horizon = S_esc (§III.C–D) is retracted if condition (v) is satisfied, while the differential-level
+identification δS_horizon = δS_esc (§III.B) — which depends on the first law rather than on a covariant bindingenergy construction — remains intact. (vi) In-place hedges have been added to §I.A and §II.E where 'single object'
+language previously appeared without immediate qualification; the abstract and §VI conclusion already had such
+hedges. (vii) A note has been added in §III.C that |U_grav|^Schw = Mc²/2 coincides with the Q = J = 0 limit of the
+Smarr identification used in §III.D, giving the Mc²/2 choice a thermodynamic motivation alongside the algebraic
+GM²/r_s motivation. None of these edits changes any numerical content, equation, derivation step, or claim; (i)
+corrects a surviving cross-section inconsistency, (ii)–(vii) sharpen precision and consistency across sections.
+v0.5.6 (May 2026) is a presentation-only revision applying standard physics-paper display-equation
+conventions to seven paragraphs in §II, §III, §IV, §V, and §VI where load-bearing equations were embedded in
+prose. No content, equation, or numerical claim is altered; existing equation numbers (1)–(20) and (8') are preserved
+unchanged. The seven paragraphs reformatted are: §II.B's Bekenstein-bound statement (displaying the bound S ≤
+2πER/(ℏc) and its evaluation at E = mc², R = r); §III.C's Schwarzschild geometric setup (displaying r_s, κ, and the
+T_H limit formula); §III.D's Reissner–Nordström setup (displaying horizon radii, area, Hawking temperature, Smarr
+formula, and the |U_grav|^RN identification); §III.D's Kerr setup (displaying the analogous Kerr quantities and |
+U_grav|^Kerr); §IV.A's Bisognano–Wichmann passage (displaying the BW formula, the natural-units and SI
+prediction ΔK = 𝒩_esc(d1), and the Unruh-temperature/rest-energy identity); §V.H's T_U-convention discussion
+(displaying the two T_U conventions and the Tolman relation); and §VI's summary recap (displaying the three
+central identities 𝒩_esc, 𝒩_esc^Schw, and ΔK = 𝒩_esc(d1) as the framework's compact statement). The rationale
+is that physics-paper conventions reserve inline math for brief incidental expressions and use display math for loadbearing, multi-term, or new equations; embedding the paper's central results in prose was working against the
+careful character of the underlying content. This revision touches nothing else — no version of any equation is
+modified, no derivation step is added or removed, no numerical result is changed.
+v0.5.5 (May 2026) makes the 𝒩_esc symbol load-bearing rather than ornamental by using it consistently across
+§III, §IV, §V, and §VI wherever the corresponding dimensionless content appears. The horizon analog
+𝒩_esc^Schw ≡ 4πGM²/(ℏc) = 4π(M/m_P)² is introduced in §III equation (17) so that the Bekenstein–Hawking
+match (17)=(18) reads S_BH/k_B = 𝒩_esc^Schw, making the dimensionless content of the BH leg visible in the
+same symbolic vocabulary as the test-mass leg. The BW prediction in §IV.A is rewritten as ΔK = 𝒩_esc(d1) for a
+test-mass perturbation at perpendicular distance d1, identifying the lattice paper's empirical target as the same
+escrow count of equation (8') evaluated at r = d1. The retrofitted-inevitability paragraph in §VI, the §V.E disclaimer,
+the §VI third open-problem paragraph, the §VI summary paragraph, and the §VI related-work paragraph are
+similarly updated to use 𝒩_esc and 𝒩_esc^Schw where appropriate. The motivation for this consistency edit is that
+v0.5.4 introduced the symbol in §II.B but used it nowhere else; this left the flag-plant looking ornamental. By using
+the symbol in the three places it organizes content (test-mass count, BH horizon count, BW prediction count), the
+candidate-organizing-variable claim is made operationally visible rather than just stated. The working-notation
+framing of v0.5.1 (provisional, pending community adoption, no personal label attached) is preserved unchanged.
+v0.5.4 (May 2026) integrates three remaining substantive points from Moonshot Kimi K2.6's review of v0.5.1
+that did not overlap with Opus 4.7's review addressed in v0.5.3. (i) The §III.C body text describing the Hawking
+temperature as 'the Unruh temperature of an observer hovering just outside the horizon' has been corrected to
+acknowledge explicitly that the local Unruh temperature of a static observer diverges as r → r_s while the Hawking
+temperature T_H is the finite Tolman-redshifted limit, related by T_H = lim_{r→r_s} T_Unruh(r) · √(−g_tt(r)). The
+§V.H guardrail already named this convention distinction; the body text now propagates it at the point of use rather
+than relying on the §V cross-reference. (ii) The abstract has been amended with a partly-notational qualifier
+matching the §V.G acknowledgment and the §VI partly-notational caveat: 'this single object is partly notational: |
+U_grav| takes regime-specific forms across the four translation legs that have not yet been connected by a single
+covariant construction, and T_U is used with two related but distinct conventions connected by the Tolman shift.'
+The abstract is now consistent with §V.G, §V.H, and §VI on this point. (iii) The §VI falsification conditions have
+been extended from three to five for symmetry across all translation legs: (iv) constrains the Tolman-redshift leg to
+
+weak field if a strong-field test fails, and (v) constrains the Jacobson leg to a notational coincidence if §V.G's open
+task is shown to have no positive resolution. The pre-registered retraction paragraph has been correspondingly
+extended to cover (iv) and (v). None of these edits changes any numerical content; all are precision and symmetry
+improvements identified in adversarial review.
+v0.5.3 (May 2026) addresses four edits from a follow-up adversarial review of v0.5.1 by Anthropic Claude
+Opus 4.7 with extended-thinking mode. (i) Hard correction: equations (19) and (20) in §IV.B had a dimensional
+inconsistency with the §IV.A correction in v0.5 (the v0.4 dimensional fix to the BW prediction was completed in
+§IV.A but did not propagate to §IV.B's equations, leaving |U_grav| = T_U · ΔS_EE with units of K rather than
+energy). The fix is twofold: a unit-convention statement has been added at the top of §IV.A naming the
+entanglement-entropy convention (S and K dimensionless, k_B inserted explicitly when crossing to thermodynamic
+units), and equations (19) and (20) have been rewritten with explicit k_B factors. (ii) A forward reference from
+§III.C to §V.G has been added, acknowledging that the choice |U_grav|^Schw = Mc²/2 is one of the four regimespecific identifications enumerated there and is adopted because it produces the algebraic S_BH match, not because
+it is derived from a covariant binding-energy construction. (iii) The related-work paragraph in §VI has been
+extended with an explicit transparency note distinguishing peer-reviewed citations [3]–[8], [10]–[13] from the
+present author's Zenodo preprints [1], [2], [9] that have not yet been submitted to peer review; the framework's
+empirical and theoretical anchors are therefore the author's own work, awaiting independent replication and peer
+review. (iv) A pre-registered retraction-commitment paragraph has been added to §VI immediately following the
+three-conditions falsification paragraph; the paragraph binds future versions of this paper to specific retractions if
+conditions (i)–(iii) are satisfied. None of these edits changes any numerical content; (i) corrects a dimensional
+bookkeeping inconsistency, (ii)–(iv) are transparency and calibration improvements identified in review.
+v0.5.2 (May 2026) addresses three corrections from a follow-up review by Anthropic Claude Opus 4.6 of the
+v0.5.1 draft. (i) The named-symbol glyph for the dimensionless escrow count has been changed from blackboardbold N (ℕ_esc) to script N (𝒩_esc); the blackboard-bold convention is universally read as 'the natural numbers' in
+mathematics and mathematical physics and would have caused notational collision with no upside. (ii) §II.B's
+Bekenstein-bound observation has been softened to distinguish the dimensional coincidence (which is real) from the
+physical identification of orbital radius with confinement radius (which is an interpretive step). The previous
+wording overreached by treating 'the escrow entropy saturates the Bekenstein bound' as a settled equivalence; the
+Bekenstein bound applies to confined systems, and reading the equality as saturation for an orbital configuration
+requires the orbital-radius-as-confinement-radius identification to be made explicitly. (iii) §VI's 'single
+thermodynamic object' description in the closing paragraph now references §V.G's partly-notational caveat, since
+the |U_grav| feeding into S_esc takes regime-specific forms that have not been connected by a single covariant
+construction. None of these edits changes any numerical content or technical claim; all reflect calibration
+improvements identified in adversarial review.
+v0.5.1 (May 2026) adds a single named-symbol definition: the dimensionless ratio 2πr/λ_C identified
+throughout the framework as the candidate organizing variable for the test-mass leg of the translation is now given
+the working notation 𝒩_esc ("the escrow count") in a new equation (8') in §II.B, with a brief reference in §I.C. The
+named symbol is provisional and is explicitly described as a working notation pending community adoption; no
+claim of priority over the underlying dimensionless ratio is made (the ratio has appeared implicitly in semiclassicalgravity calculations for decades), and no personal label is attached. The intent of the symbol introduction is editorial:
+future citations of the framework's central interpretive object now have a clean symbolic handle. No other content of
+the paper changes from v0.5; all numerical results, guardrails, falsification conditions, and §III.D consistency checks
+are preserved.
+v0.5 (May 2026) addresses fifteen edits from a fourth round of adversarial review (Anthropic Claude Opus 4.6
+standalone; Anthropic Claude Opus 4.7 with extended-thinking mode in two passes, the second meta-analyzing
+Moonshot Kimi K2.6). Three were hard corrections to errors in v0.4: (i) the SI-restored form of the BW prediction
+in §IV.A was dimensionally inconsistent ('ΔK·T_U = m·d1·c³/ℏ' has units of velocity squared, not energy or
+temperature) and has been corrected to the standard form ΔK = 2π·m·c·d1/ℏ (dimensionless); (ii) the §II.E claim
+that gravitational binding energy is 'already accounted for in the matter stress-energy via the standard energymomentum content' was technically wrong (gravitational binding is non-local and non-tensorial in GR, not
+contained in T_μν^matter) and has been replaced with the correct Bianchi-identity / completeness argument; (iii) the
+§II.D claim that the Tolman relation is 'weak-field in its standard derivation' was wrong (the Tolman relation is
+exact for static spacetimes) and has been replaced with the correct separation: the Tolman relation is exact, the
+escrow translation of the Schwarzschild redshift is weak-field. Twelve further edits tightened soft spots: striking
+'without being forced' framing from §I.C and acknowledging that 2πr/λ_C is dimensionally forced (with cross-
+
+corner recurrence as the substantive content); two new §V subsections (G and H) explicitly acknowledging that |
+U_grav| lacks a single covariant definition across regimes and that T_U is used with two related but distinct
+conventions; softening 'unification' to 'conceptual re-reading' in the abstract and §I.A; acknowledging the finite-vsdifferential distinction in §III.B; making the Bekenstein bound saturation explicit in §II.B (S_esc is the Bekenstein
+bound for a test mass at radius r, not merely a Bekenstein-bound-respecting quantity); sharpening the abstract on the
+present empirical status (distinguishing 1+1D prefactor-suppression from 3+1D functional-form mismatch and
+flagging the weak-field caveat); sharpening §VI condition (ii) with a concrete N ≥ 24 threshold; adding an 'escrow is
+interpretive vocabulary' disclaimer to §I.A; breaking out the FGHMV-to-Rindler bridges in §IV.B into three
+explicitly enumerated assumptions. None of these edits changes a numerical result; the v0.5 paper recovers all the
+same numerical values as v0.4 within machine precision.
+v0.4 (May 2026) added Reissner-Nordström and Kerr consistency checks via the Smarr formula (§III.D),
+explicit weak-field acknowledgment (§II.D), regime-bridging disclaimer for the FGHMV-to-flat-space identification
+(§IV.B), removal of orphaned MOND/SPARC references, explicit falsification conditions (§VI), and a related-work
+paragraph (§VI). Following adversarial review by Moonshot Kimi K2.6 and Anthropic Claude Opus 4.7.
+v0.3 (May 2026) added a single sentence in §IV.D documenting that the lattice paper's 1+1D peak prefactor (α
+≈ 0.037 at d1 = 4, N = 1000, m = 1) is independently reproducible from the canonical methodology, with V1 and V2
+sanity checks passing across the d1 sweep. Both implementations agreed to within 1% across d1 ∈ [2, 32]. The
+verification was undertaken in part because several LLM-assisted attempts at analytic derivation of the prefactor (by
+OpenAI ChatGPT, xAI Grok, and Google Gemini, in multiple rounds) failed independent numerical and citation
+verification; the falsifiable empirical content stands, but no first-principles analytic derivation is presently available.
+v0.2 (May 2026) added two tightening edits following adversarial review by OpenAI ChatGPT: (i) an abstract
+statement identifying this as a translation paper, not a derivation paper, and naming the 1/30 prefactor calculation as
+the test that would promote it from interpretive synthesis to constraining theoretical proposal; (ii) a §VI paragraph
+naming the 'retrofitted inevitability' risk and identifying the 1/30 calculation as the specific test that distinguishes
+inevitability from retrofitting.
+v0.1 (May 2026) is the initial draft. It was developed across a single working session and refined against three
+pre-deposit review rounds by external LLM systems (Anthropic Claude Opus 4.7, xAI Grok, Google Gemini),
+incorporating corrections including: ℏ vs ℋ typesetting (Section II), explicit guardrail wording around the mattersource distinction, consolidation of guardrails into Section V, and triage of which Phase I tests count as independent
+checks versus dimensional-consistency tautologies. Equations (8), (9), (17), and (18) were verified by direct
+computation against published reference values. The author thanks the reviewing LLM systems for their corrections
+and acknowledges that the substantive scientific content of the paper, including the conclusions, is the author's own
+responsibility.
+
+
