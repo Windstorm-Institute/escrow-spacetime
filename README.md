@@ -55,7 +55,7 @@ The lattice computations referenced in §IV.C are at:
 
 ## In the Series
 
-### Track 2 — Entropic Bounds in Analog Systems · 5 papers (Papers 10–14)
+### Track 2 — Entropic Bounds in Analog Systems · 6 papers (Papers 10–15)
 
 | # | Paper | DOI | Labs mirror |
 |---|---|---|---|
@@ -64,7 +64,7 @@ The lattice computations referenced in §IV.C are at:
 | 12 | [C8 Clarification Note](https://github.com/Windstorm-Institute/c8-clarification-note) *(companion to Paper 11)* | [10.5281/zenodo.20041992](https://doi.org/10.5281/zenodo.20041992) | [Labs](https://github.com/Windstorm-Labs/c8-clarification-note) |
 | 13 | [Lattice QFT Test of the Static Escrow Postulate](https://github.com/Windstorm-Institute/lattice-qft-test) *(supplement to Paper 11)* | [10.5281/zenodo.20057538](https://doi.org/10.5281/zenodo.20057538) | [Labs](https://github.com/Windstorm-Labs/lattice-qft-test) |
 | 14 | [Spacetime as Escrow Bookkeeping](https://github.com/Windstorm-Institute/escrow-spacetime) *(this paper — translation of standard GR results)* | [10.5281/zenodo.20126091](https://doi.org/10.5281/zenodo.20126091) | [Labs](https://github.com/Windstorm-Labs/escrow-spacetime) |
-
+| 15 | [The 𝒩<sub>esc</sub> Recipe](https://github.com/Windstorm-Institute/nesc-recipe) | Formalizes the 𝒩<sub>esc</sub> notation from Paper 14 as a two-argument function 𝒩<sub>esc</sub>(*E*, *L*) ≡ 2π*EL*/(ℏ*c*) plus a regime-specific recipe extracting (*E*, *L*) from |*U*|/*T*. Observes that the same one-function recipe, applied across three qualitatively distinct settings — test mass in Schwarzschild, Bekenstein–Hawking via Smarr, and Casini's QFT bound in a Rindler wedge — evaluates to the Bekenstein-bound saturation form in each. Lattice verification at *N* ∈ [200, 1200]: boost-generator BW identification at 0.087% mean accuracy; Casini–BW inequality verified within max 5.4% saturation. Theorem 1 conditional on BW, Casini, and moment-positivity. Five pre-registered retractions. Continuation of Paper 14. | [10.5281/zenodo.20145106](https://doi.org/10.5281/zenodo.20145106) | [Labs](https://github.com/Windstorm-Labs/nesc-recipe) |
 ### Track 1 — The Throughput Basin · 9 papers (Papers 1–9 globally; arc complete)
 
 See the [Windstorm Institute org profile](https://github.com/Windstorm-Institute) for the full Track 1 series.
