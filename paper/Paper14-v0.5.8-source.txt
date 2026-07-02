@@ -362,8 +362,10 @@ associated with a particular local Rindler horizon — a coarse-grained quantity
 area. The escrow entropy S_esc is the entropy held against the same Unruh temperature by whatever mass-energy is
 in the wedge behind that horizon. The first law of horizon thermodynamics, applied to a small flux of mass-energy
 crossing the horizon, equates these two: a flux δQ of energy at temperature T_U across the horizon produces a
-change δS in the horizon entropy, and that δS is exactly δQ/T_U = δ|U_grav|/T_U — the change in escrow entropy
-associated with the flux. We note that the first law relates the two entropies at the differential level (δS_horizon =
+change δS in the horizon entropy, and that δS is exactly δQ/T_U — the change in escrow entropy
+associated with the flux. This differential change is dS_esc = d(|U_grav|/T_U), not δ|U_grav|/T_U alone: because
+the horizon temperature scales as T_U ∝ 1/M, the −|U_grav| dT_U/T_U² term contributes equally to the differential,
+so d(|U_grav|/T_U) = 2·(δ|U_grav|/T_U) = δQ/T_U. We note that the first law relates the two entropies at the differential level (δS_horizon =
 δS_esc); the finite identification S_horizon = S_esc for a Schwarzschild black hole of mass M follows from this
 differential relation together with integrability along the formation path, and is confirmed directly by the algebraic
 calculation in §III.C (equations 17–18). The finite-level confirmation does not depend solely on the differential
